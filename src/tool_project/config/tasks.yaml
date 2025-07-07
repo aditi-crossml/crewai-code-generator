@@ -1,0 +1,34 @@
+# setup_task:
+#   description: >
+#     Set up the development environment for {topic} projects by giving commands to install necessary dependencies.
+#   expected_output: >
+#     A list of commands to run for setting up the {topic} environment
+#   agent: setup_agent
+
+code_generation_task:
+  description: >
+    Generate high-quality code snippets based on {topic} requirements.
+  expected_output: >
+    A code snippet that meets the specified requirements for {topic}.
+  agent: code_generation_agent
+
+code_saving_task:
+  description: >
+    Save and manage code snippets effectively for future reference.
+  expected_output: >
+    Confirmation that the code snippet has been saved successfully.
+  agent: code_saving_agent
+
+code_execution_task:  
+  description: >
+    Execute code snippets and provide feedback on their performance.
+  expected_output: >
+    Feedback on the execution of the code snippet, including any errors or performance metrics.
+  agent: code_execution_agent
+
+code_testing_task:
+  description: >
+    Ensure the quality and reliability of code through rigorous testing.
+  expected_output: >
+    Test results indicating the success or failure of the code snippet, along with any issues found.
+  agent: code_testing_agent
